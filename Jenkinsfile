@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = 'yourdockerhubusername/springboot-app'
+        IMAGE = 'ashokdevops582/springboot-app'
         SONARQUBE = 'SonarQube' // Jenkins global config
     }
 
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yourusername/springboot-app.git'
+                git 'https://github.com/Ashokbadam52/springboot-app.git'
             }
         }
 
